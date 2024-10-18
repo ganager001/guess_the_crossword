@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/txtHistory"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:text="History Player"
+        android:textColor="#04146F"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- TableLayout to display data -->
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:shrinkColumns="0"
+        android:stretchColumns="1">
+
+        <!-- Table Header -->
+        <TableRow android:layout_marginTop="15dp"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="ID"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Score"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Total Answers"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- Button below the table -->
+    <Button
+        android:id="@+id/btnBackHistory"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:padding="8dp"
+        android:text="Back" />
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DoanOChu</string>
+    <string name="enter_full_name">ENTER FULL NAME</string>
+    <string name="playing">Playing</string>
+    <string name="enter_your_name">Enter your name</string>
+</resources>

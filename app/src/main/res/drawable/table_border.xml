@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF"/> <!-- Màu nền bên trong -->
+    <stroke android:width="0.5dp" android:color="#000000"/> <!-- Độ dày và màu của viền -->
+    <padding android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="0dp"/>
+</shape>

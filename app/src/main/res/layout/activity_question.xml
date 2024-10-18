@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:weightSum="5">
+
+    <!-- Hiển thị câu hỏi -->
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Câu hỏi sẽ xuất hiện ở đây"
+        android:textSize="18sp"
+        android:layout_weight="1" />
+
+    <!-- Ô nhập đáp án -->
+    <EditText
+        android:id="@+id/answerEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập đáp án của bạn"
+        android:padding="16dp"
+        android:layout_weight="1"
+        android:textSize="18sp"/>
+
+    <!-- Nút gợi ý -->
+    <Button
+        android:id="@+id/hintButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gợi ý"
+        android:layout_weight="1"
+        android:padding="8dp"/>
+
+    <!-- Hiển thị gợi ý -->
+    <TextView
+        android:id="@+id/hintTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gợi ý sẽ xuất hiện ở đây"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_weight="1" />
+
+    <!-- Nút kiểm tra đáp án -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="1dp"
+        android:text="Xác nhận" />
+
+</LinearLayout>

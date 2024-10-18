@@ -1,0 +1,80 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Phần chứa text -->
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="99dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="335dp"
+            android:layout_height="66dp"
+            android:fontFamily="serif"
+            android:text="WELCOME TO THE CROSSWORD GAME"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFEB3B" />
+    </LinearLayout>
+
+    <!-- Phần chứa nút -->
+    <LinearLayout
+        android:layout_width="232dp"
+        android:layout_height="172dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:background="#4DB38383"
+        android:gravity="center"
+        android:orientation="vertical"> <!-- Khoảng cách với TextView phía trên -->
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8BC34A"
+            android:gravity="center"
+            android:text="Play Game"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8BC34A"
+            android:gravity="center"
+            android:text="Play history"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnHowToPlay"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8BC34A"
+            android:gravity="center"
+            android:text="How to play Game"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF5722"
+            android:text="Exit Game" />
+    </LinearLayout>
+
+</LinearLayout>
